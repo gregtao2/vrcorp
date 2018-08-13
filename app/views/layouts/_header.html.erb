@@ -1,4 +1,4 @@
-<header class="navbar navbar-fixed-top navbar-inverse">
+<!-- <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="container">
     <%= link_to "VRCORP", root_path, id: "logo" %>
     <nav>
@@ -9,4 +9,61 @@
       </ul>
     </nav>
   </div>
-</header>
+</header> -->
+
+  <header class="site-header">
+  
+    <div class="site-banner"> 
+      <%= link_to "VRCORP", root_path, id: "logo" %>
+<!-- 
+      <a class="site-logo-link" href="/" rel="home">
+        <img src="" alt="Figure 1 home page" class="site-logo-sm" width="44" height="44">
+        <img src="./Achieve clinical mastery _ Figure 1_files/figure1-logo-wide.png" alt="Figure 1 home page" class="site-logo-lg" width="58" height="28">
+      </a>
+ -->
+      <div class="header-buttons option-a hidden-xs hidden-sm">
+        <a class="header-secondary-button" id="login-header" href="https://app.figure1.com/account/login">
+          Log&nbsp;In
+        </a> 
+        <!-- TODO - ADD IF / ELSE -->
+        <a class="btn btn-grey-outline header-primary-button" id="signup-header" href="https://app.figure1.com/account/register">Sign&nbsp;Up</a>
+        <!-- <a class="btn btn-grey-outline header-primary-button" id="signup-header" href="https://app.figure1.com/account/register">New&nbsp;Project</a> -->
+      </div>
+
+    </div>
+  
+  <nav class="site-nav">
+    
+    <button class="hamburger hamburger--squeeze" id="site-nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="site-menu" aria-haspopup="true">
+      <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+      </span>
+    </button>
+    
+    <div class="site-menu-wrapper" id="site-menu-wrapper" aria-hidden="true">
+      <ul class="site-menu" id="site-menu">
+          
+          <li id="menu-item-0">
+            <a href="https://figure1.com/about/">About</a>
+          </li>
+        
+          <li id="menu-item-1">
+            <a href="https://app.figure1.com/account/login">Log In</a>
+          </li>
+        
+          <li id="menu-item-2">
+            <a href="https://app.figure1.com/account/register">Sign Up</a>
+          </li>
+        
+          <li id="menu-item-3">
+            <a href="https://figure1.com/contact/">Contact</a>
+          </li>
+
+      </ul>
+
+      <!-- <hr> -->
+
+    </div>
+  </nav>
+
+</header> 
