@@ -13,8 +13,12 @@
 
 <!-- TODO -->
 <!-- MAKE LINKS DYNAMIC -->
+<!-- http://www.korenlc.com/rails-tutorial-authentication-with-devise/ -->
+
 <!-- ADD NEW NAVBAR THAT OPENS -- https://mdbootstrap.com/components/bootstrap-hamburger-menu/ -->
 <!-- file:///Users/gtao/Downloads/edit/fig1home.htm -->
+
+
 
   <header class="site-header">
   
@@ -27,11 +31,10 @@
       </a>
  -->
       <div class="header-buttons option-a hidden-xs hidden-sm">
-        <a class="header-secondary-button" id="login-header" href="https://app.figure1.com/account/login">
-          Log&nbsp;In
-        </a> 
+        <%= link_to "Log In",   new_user_session_path, :class=>"header-secondary-button"%>
+
         <!-- TODO - ADD IF / ELSE -->
-        <a class="btn btn-grey-outline header-primary-button" id="signup-header" href="https://app.figure1.com/account/register">Sign&nbsp;Up</a>
+        <%= link_to "Sign Up",   new_user_registration_path, :class=>"btn btn-grey-outline header-primary-button", :id=>"signup-header"%>
         <!-- <a class="btn btn-grey-outline header-primary-button" id="signup-header" href="https://app.figure1.com/account/register">New&nbsp;Project</a> -->
       </div>
 
